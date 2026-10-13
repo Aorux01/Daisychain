@@ -1,0 +1,19 @@
+{
+  "id": "demo.openers",
+  "name": { "en": "Openers", "fr": "Ouvertures" },
+  "icon": "link",
+  "color": "indigo",
+  "blocks": [
+    {
+      "id": "search",
+      "title": { "en": "Search the web for…", "fr": "Chercher sur le web…" },
+      "params": [
+        { "key": "Query", "label": { "en": "Search", "fr": "Recherche" }, "type": "text" }
+      ],
+      "output": "none",
+      "steps": [
+        { "type": "intent", "action": "android.intent.action.VIEW", "data": "https://duckduckgo.com/?q={{Query}}" }
+      ]
+    }
+  ]
+}

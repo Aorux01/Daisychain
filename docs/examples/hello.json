@@ -1,0 +1,18 @@
+{
+  "id": "demo.greetings",
+  "name": { "en": "Greetings", "fr": "Salutations", "it": "Saluti", "de": "Grüße", "es": "Saludos" },
+  "icon": "bolt",
+  "color": "teal",
+  "blocks": [
+    {
+      "id": "hello",
+      "title": { "en": "Say hello", "fr": "Dire bonjour", "it": "Dire ciao", "de": "Hallo sagen", "es": "Saludar" },
+      "params": [
+        { "key": "Who", "label": { "en": "Who", "fr": "Qui", "it": "Chi", "de": "Wer", "es": "Quién" }, "type": "text", "default": "world" }
+      ],
+      "steps": [
+        { "type": "text", "template": "Hello {{Who}}!" }
+      ]
+    }
+  ]
+}

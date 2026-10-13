@@ -1,0 +1,19 @@
+{
+  "id": "demo.weathertext",
+  "name": { "en": "Weather as text", "fr": "Météo en texte" },
+  "icon": "location",
+  "color": "blue",
+  "blocks": [
+    {
+      "id": "oneline",
+      "title": { "en": "Weather in one line", "fr": "Météo en une ligne" },
+      "description": { "en": "Asks wttr.in for a short summary of a town.", "fr": "Demande à wttr.in un court résumé pour une ville." },
+      "params": [
+        { "key": "City", "label": { "en": "City", "fr": "Ville" }, "type": "text", "default": "Paris" }
+      ],
+      "steps": [
+        { "type": "http", "method": "GET", "url": "https://wttr.in/{{City}}?format=3" }
+      ]
+    }
+  ]
+}
