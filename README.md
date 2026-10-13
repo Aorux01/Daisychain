@@ -2,7 +2,7 @@
 
 # Daisychain
 
-**Chain small blocks together to automate your Android phone — the way Apple Shortcuts does on iOS.**
+**Chain small blocks together to automate your Android phone - the way Apple Shortcuts does on iOS.**
 
 Visual · Block-based · Reads Apple `.shortcut` files · Automations · Plugins
 
@@ -16,12 +16,12 @@ English · Français · Italiano · Deutsch · Español
 
 Daisychain is an Android re-creation of Apple Shortcuts. You build a *shortcut* by stacking **blocks** (actions) in a
 list: each block takes what the previous one produced, does one small thing, and hands its result on.
-Blocks are deliberately generic, like in Scratch — you name your own variables instead of relying on dozens of
+Blocks are deliberately generic, like in Scratch - you name your own variables instead of relying on dozens of
 over-specialised actions.
 
 * **Every block shows its input and its output**, so you always see what flows where.
 * **Variables you define and name**, usable inside any text or parameter field.
-* **Control flow**: If / Otherwise, Repeat, Repeat with each, Choose from menu — nested as deep as you like, with drag & drop.
+* **Control flow**: If / Otherwise, Repeat, Repeat with each, Choose from menu - nested as deep as you like, with drag & drop.
 * **In-app help** with a guide for each topic (Settings → Help and guide).
 * A block that no longer exists is shown in **red** with a *Replace* button instead of silently disappearing.
 
@@ -31,9 +31,9 @@ over-specialised actions.
 |---|---|
 | **~120 blocks** | scripting, text, numbers, dates, lists, dictionaries, JSON, web requests, files, photos & camera, audio recording, OCR, dictation, translation, QR codes, location & weather, contacts, calendar, SMS, alarms, timers, notifications, media control, settings… |
 | **Apple compatibility** | block ids and parameter keys are Apple's (`is.workflow.actions.*`, `WF*`), so unsigned `.shortcut` files (binary or XML plist) can be **imported**, and shortcuts can be **exported** as `.shortcut` |
-| **Automations** | time of day, charger, battery level, Wi‑Fi, Bluetooth device, airplane mode, NFC tag — optionally asking first with a notification |
+| **Automations** | time of day, charger, battery level, Wi‑Fi, Bluetooth device, airplane mode, NFC tag - optionally asking first with a notification |
 | **Everywhere** | home-screen pinned shortcuts, long-press app menu, widget, quick-settings tile, Android share menu ("Run a shortcut on this") |
-| **Plugins** | add blocks with a single JSON file — no code, see [docs/PLUGINS.md](docs/PLUGINS.md) |
+| **Plugins** | add blocks with a single JSON file - no code, see [docs/PLUGINS.md](docs/PLUGINS.md) |
 | **System switches** | Do Not Disturb, ringer mode (sound / vibrate / silent) out of the box; Wi‑Fi, Bluetooth, mobile data and airplane mode through the free [Shizuku](https://shizuku.rikka.app) app; hotspot details (name, password) ready for a QR code |
 | **Themes & languages** | light / dark / system · English, Français, Italiano, Deutsch, Español (auto-detected, switchable in Settings) |
 
@@ -94,7 +94,7 @@ docs/            ACTIONS.md (add a block), PLUGINS.md (write a plugin), examples
 
 ### Adding a block
 
-Write one class extending `ActionDefinition`, annotate it with `@AutoService(ActionDefinition::class)` — it appears in
+Write one class extending `ActionDefinition`, annotate it with `@AutoService(ActionDefinition::class)` - it appears in
 the picker automatically. Details in [docs/ACTIONS.md](docs/ACTIONS.md).
 
 ## Permissions
